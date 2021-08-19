@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Customer form </title>
+<link rel="stylesheet" href="custform.css">
+</head>
+
+<body topmargin= "100">
+
+<center>
+<form name="formal">
+<h1><font face="<Lucida Handwriting" size=+6 color= "red">Transaction Details</font> </h1>
+</form>
+<table  border=1>
+<tr><th>From</th><th>To</th><th>Amount</th></tr>
+<?php
+$con=mysqli_connect("127.0.0.1","root","","bank");
+$sql="Select * From transaction";
+$res=mysqli_query($con,$sql);
+
+
+
+while($row=mysqli_fetch_array($res))
+{
+  echo"<tr><td>". $row['From']."</td><td>".$row['To']."</td><td>".$row['Amount']."</td></tr>";
+}
+?>
+</table>
+
+</center>
+
+</body>
+
+</html>

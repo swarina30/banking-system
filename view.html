@@ -1,0 +1,30 @@
+<html>
+<head>
+<title>Customer form </title>
+<link rel="stylesheet" href="custform.css">
+</head>
+
+<body topmargin= "100">
+
+<center>
+<form name="formal">
+<h1><font face="<Lucida Handwriting" size=+6 color= "red">Customers</font> </h1>
+</form>
+<table>
+<tr><th>Name</th><th>Email</th><th>Account Number</th<th>Balance</th>
+</tr>
+
+<?php
+$con=mysqli_connect("3306","root","1554","bank");
+$sql="Select * From Customer;
+$res=mysqli_query($con,$sql);
+while($row=mysqli_fetch_array($res))
+{
+  echo"<tr><td>".$row['name']."</td><td>".$row['email']."</td><td>".$row['accountNum']."</td><td>".$row['balance']."</td></tr>";
+}
+?>
+</table>
+</center>
+</body>
+
+</html>

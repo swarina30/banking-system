@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+#head{
+    background-color:cadetblue;
+    text-align: center;
+    padding:8px 2px;
+    font-size: 40px;
+    text-shadow: 2px 4px green;
+}
+body{
+    background: url("front.jfif")  no-repeat center center/cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
+    
+}
+
+
+   /* Navigation Bar  */
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+
+/* Navigation Bar: Logo and Image */
+#logo{    
+margin: 10px 34px;
+}
+
+#logo img{    
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+
+#navbar ul li a{
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+color: black;
+background-color: white;
+}
+
+.image{
+    height: 250px;
+    width: 250px;
+    border-radius: 50%;
+}
+
+.container{
+    display: flex;
+    justify-content:space-evenly;
+    padding: 50px 0;
+    flex-wrap: wrap;
+}
+
+.link{
+    font-size: 20px;
+    border: 2px solid red;
+    text-align: center;
+    font-weight: bold;
+    background-color: aqua;
+    text-shadow: 2px 2px gray;
+}
+
+.link:hover{
+    background-color: gray;
+    color: white;
+    border:2px solid gray;
+}
+
+.column{
+    transition: transform .2s;
+}
+
+button {
+    border: none;
+    border-radius: 8px;
+    padding: 10px;
+    background: #7B8788;
+    color: white;
+    letter-spacing: 1.5px;
+    font-size: 15px;
+    transition: 0.5s;
+}
+
+button:hover,
+h1:hover {
+    transform: scale(1.1);
+}
+
+button:hover {
+    background-color: #4C4B4B;
+}
+.h-primary{
+    font-size: 3.8rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+#contact{
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+#contact-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 34px;
+}
+
+#contact-box input,
+#contact-box textarea{
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 9px;
+    font-size: 1.1rem;
+
+}
+
+
+
+
+#contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Bree Serif', serif;
+
+}
+

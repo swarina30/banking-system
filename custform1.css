@@ -1,0 +1,100 @@
+body{
+    background: url("form1.jfif")  no-repeat center center/cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 200%;
+    
+}
+
+	  
+	  table
+{ background-color:#ccffff;
+text-align:center;
+font-family="comic sans ms";
+width: 80%;
+height:200px;
+//border-collapse:collapse;
+border-radius:20px;
+overflow-y:scroll;
+ 
+}
+th
+{
+background-color:green;
+color:white;
+border-radius:20px;
+
+}
+
+
+tr:nth-child(even) {background-color: #f2f2f2;border-radius:20px;}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 85%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.6;
+}
+
+
+/* Navigation Bar: Logo and Image */
+#logo{    
+margin: 10px 34px;
+}
+
+#logo img{    
+    height: 59px;
+    margin: 3px 6px;
+}
+
+
+/* Navigation Bar: List Styling */
+
+
+#navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+
+#navbar ul li{
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+
+#navbar ul li a{
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  color: white;
+  text-decoration: none;
+
+}
+
+#navbar ul li a:hover{
+color: black;
+background-color: white;
+}
+.btn{
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: black;
+    color: white;
+    margin: 17px;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+}
